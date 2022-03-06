@@ -1,13 +1,17 @@
-package com.alexandrepossari.desafiodeprogramacao;
+package com.alexandrepossari.desafiodeprogramacao.questoes;
+
+import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
+@Component
 public class Questao3 {
-    public static void main(String[] args) {
+    public static String questao3(String frase) {
+
         double raizTamanho;
         int raizFloor, raizCeil, nLinhas = 0, nColunas = 0, j = 0, k = 0;
         boolean menorGrid, medioGrid, maiorGrid;
-        String frase = "Tenha um bom dia", fraseFinal = "";
+        String fraseFinal = "";
 
         frase = frase.replaceAll(" ", "");
 
@@ -64,6 +68,6 @@ public class Questao3 {
             }
         }
 
-        System.out.println(fraseFinal);
+        return fraseFinal;
     }
 }
